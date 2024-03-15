@@ -1,0 +1,19 @@
+# Credentials
+credentials.json
+.env
+
+# Python
+Lib/
+Scripts/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Build Artifacts
+*.egg-info/
+dist/
+build/
