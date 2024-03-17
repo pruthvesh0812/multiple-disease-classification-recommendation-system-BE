@@ -12,7 +12,7 @@ def main():
     all_dataframes = create_file_dfs('major-project-bucket')
     predictor = Predictor()
     predictor.train_prediction_models(all_dataframes)
-    recommend_diabetes = RECOMMENDER('diabetes')
+    recommend_diabetes = RECOMMENDER(all_dataframes['for_diabetes.csv'],'diabetes')
     recommend_diabetes.train()
     
     return [predictor,recommend_diabetes]
